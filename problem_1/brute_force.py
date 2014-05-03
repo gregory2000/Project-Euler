@@ -1,4 +1,7 @@
 __author__ = 'g42gregory'
+import time
+
+start = time.time()
 max = 1000
 nums = set()
 
@@ -18,4 +21,6 @@ sum = 0
 for num in nums:
     sum = sum + num
 
+end = time.time()
 print sum
+print end - start
